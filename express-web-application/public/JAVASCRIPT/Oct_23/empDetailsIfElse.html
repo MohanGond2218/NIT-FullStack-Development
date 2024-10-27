@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emp Details If Else</title>
+</head>
+<body>
+    <script>
+        var empName = prompt('Enter Your Name: '); 
+        var age = prompt('Enter Your Age: ');
+        var gender = prompt('Enter Your Gender: ');
+        var dept = prompt('Enter Your Department: ');
+        var basicSalary = parseInt(prompt('Enter Your Basic Salary: '));
+        var pfValue = (14 * basicSalary) /100;
+        var hraValue = (20 * basicSalary) /100;
+        var totalSalary = basicSalary + pfValue + hraValue;
+
+        var totalTax;
+        var taxPercent;
+        if (gender.toLocaleLowerCase() === 'male') {
+            if (totalSalary >= 200000) {
+                taxPercent = 15;
+                // var totalTax = (15 * totalSalary) / 100;
+            } else if (totalSalary >= 150000) {
+                taxPercent = 10;
+                // var totalTax = (10 * totalSalary) / 100;
+            } else if (totalSalary >=100000) {
+                taxPercent = 5;
+                // var totalTax = (5 * totalSalary) / 100;
+            } else {
+                taxPercent = 0;
+                // totalTax = 0; 
+            }
+        } else if (gender.toLocaleLowerCase() === 'female') {
+            if (totalSalary >= 200000) {
+                taxPercent = 10;
+                // var totalTax = (10 * totalSalary) / 100;
+            } else if (totalSalary >= 150000) {
+                taxPercent = 5;
+                // var totalTax = (5 * totalSalary) / 100;
+            } else {
+                taxPercent = 0;
+                // totalTax = 0; 
+            }
+        }
+
+        var totalTax = (taxPercent * totalSalary) / 100;
+
+        console.log('Employee Name: ',empName);
+        console.log('Employee Age: ',age);
+        console.log('Employee Gender: ',gender);
+        console.log('Employee Department: ',dept);
+        console.log('Total Salary: ',totalSalary);
+        console.log('Total Tax: ',totalTax);
+    </script>
+</body>
+</html>

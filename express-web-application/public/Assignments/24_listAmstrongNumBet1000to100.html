@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>List Amstrong Number Between 1000 to 100</title>
+    </head>
+    <body>
+        <h3>List Amstrong Number Between 1000 to 100</h3>
+        <script>
+            for (let i = 1000; i >= 100; i--) {
+                var n = i;
+                var temp = n;
+                var length = 0, rem, amstrongNo = 0;
+                while (n > 0) {
+                    length++;
+                    n = parseInt(n / 10);
+                }
+                n = temp;
+                while (n > 0) {
+                    rem = n % 10;
+                    amstrongNo = amstrongNo + rem ** length;
+                    n = parseInt(n / 10);
+                }
+                if (temp === amstrongNo) {
+                    console.log('Amstrong Number is: ', amstrongNo);
+                }
+            }
+        </script>
+    </body>
+</html>

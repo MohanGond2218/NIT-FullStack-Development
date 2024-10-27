@@ -1,0 +1,9 @@
+
+//hoisting ----Imp
+
+The concept of identifying all the variable declarations moving to the starting of the application is called variable hoisting.
+
+Javascript by default implements variable hoisting feature.
+
+//Student details
+Write a program to work with student details by reading dynamic data from user.

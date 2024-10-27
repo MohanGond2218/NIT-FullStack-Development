@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Given Number Amstrong or not</title>
+</head>
+<body>
+    <h2>Check Given Number Amstrong or not</h2>
+    <script>
+        var n = parseInt(prompt('Enter a number to check Amstrong or not: '));
+        var rem, temp = n, len = 0, amstrongNo = 0;
+        while (n > 0) {
+            len++;
+            n = parseInt(n / 10);
+        }
+        n = temp;
+        while (n > 0) {
+            rem = n % 10;
+            amstrongNo = amstrongNo + rem ** len;
+            n = parseInt(n / 10);
+        }
+        if (temp === amstrongNo) {
+            console.log('Given Number is Amostrong Number: ', temp);
+        } else {
+            console.log('Given Number is NOT an Amostrong Number: ', temp);
+        }
+    </script>
+</body>
+</html>

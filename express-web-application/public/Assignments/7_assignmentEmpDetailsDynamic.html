@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript - Employee Details Dynamic</title>
+    </head>
+    <body>
+        <script>
+            var empname = prompt('Enter Employee Name: ');
+            age = prompt('Enter Age: ');
+            var gender = prompt('Enter Gender: ');
+            var dep = prompt('Enter Department: ');
+            var basicSal = prompt('Basic Salary: ');
+            var pfvalue = (14 * parseInt(basicSal)) / 100;
+            var hraVAlue = (24 * parseInt(basicSal)) / 100;
+            var totalSal = parseInt(basicSal) + parseInt(pfvalue) + parseInt(hraVAlue); 
+
+            // var totalSal = basicSal + ((14 * basicSal) / 100) + ((24 * basicSal) / 100)
+
+            console.log("Name is ", empname);            
+            console.log("Age is ", age);
+            console.log("Gender " , gender);
+            console.log("Dep is " + dep);
+            console.log("basic sal " + basicSal);
+            console.log("total sal " + totalSal);
+            console.log("Name is " , empname , "Age is " + age + ' Dep is ' + dep);
+        </script>
+    </body>
+</html>

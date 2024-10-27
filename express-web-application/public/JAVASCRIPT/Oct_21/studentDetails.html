@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+</head>
+<body>
+    <script>
+        // var sName = 'Raj'
+        // var age = 25;
+        // var gender = 'Male';
+        // var m1 = 99;
+        // var m2 = 99;
+        // var m3 = 99;
+
+        var sName =  prompt('Enter Name: ');
+        var age = prompt('Enter Age: ');
+        var gender = prompt('Enter Gender: ');
+        var m1 = prompt('Enter Marks 1: '); 
+        var m2 = prompt('Enter Marks 2: ');
+        var m3 = prompt('Enter Marks 3: ');
+
+        var total = parseInt(m1)+parseInt(m2)+parseInt(m3);
+        var avg = total/3;
+
+        console.log(`Name is ${sName}`);
+        console.log(`Age is ${age}`);
+        console.log(`gender is ${gender}`);
+        console.log(`Total is ${total}`);
+        console.log(`Average is ${avg}`);
+
+    </script>
+</body>
+</html>

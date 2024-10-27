@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable hoisting</title>
+</head>
+<body>
+    <script>
+        // k = 44;
+        console.log(k);
+        var k = 99;
+        console.log(k);
+        var name = 'mohan';
+
+        //JS Doing
+        var k, name;
+        console.log(k);
+        k = 99;
+        console.log(k);
+        name = 'mohan';
+
+    </script>
+</body>
+</html>

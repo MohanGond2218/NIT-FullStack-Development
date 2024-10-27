@@ -1,0 +1,15 @@
+https://apiurl/
+
+https://apiurl/ ?
+userName=asfasf
+&accountPassword=aasfsa
+&gender=Male
+&lngKannada=on
+&lngHindi=on
+&course=BSC
+&countryName=jpn
+&aboutYourself=sfsf
+
+https://apiurl/?userName=asfasf&accountPassword=asfsf&gender=Male&lngKannada=Kannada&course=BSC&countryName=jpn&aboutYourself=sfsf
+
+

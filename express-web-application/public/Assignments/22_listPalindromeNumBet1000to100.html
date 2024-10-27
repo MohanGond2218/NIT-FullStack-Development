@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palindrome Numbers Between 1000 to 100</title>
+    </head>
+    <body>
+        <h3>Palindrome Numbers Between 1000 to 100</h3>
+        <script>
+            for (var i = 1000; i >= 100; i--) {
+                var inputNum = i;
+                var n = i, rem, reverse = 0;
+                while (n > 0) {
+                    rem = n % 10;
+                    reverse = (reverse * 10) + rem;
+                    n = parseInt(n / 10);
+                }
+                if (inputNum === reverse) {
+                    console.log(`Palindrome Number is: ${inputNum}`);
+                }
+            }
+        </script>
+    </body>
+</html>

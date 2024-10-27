@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lucky Number Between 399 to 199</title>
+    </head>
+    <body>
+        <h2>Lucky Number Between 399 to 199</h2>
+        <script>
+            for (var i = 399; i >= 199; i--) {
+                var n = i;
+                var luckyNumber = 0;
+                var rem;
+                while (n > 0) {
+                    rem = n % 10;
+                    luckyNumber += rem;
+                    n = parseInt(n / 10);
+                    if (n === 0 && luckyNumber > 9) {
+                        n = luckyNumber;
+                        luckyNumber = 0;
+                    }
+                }
+                console.log(`Lucky Number of ${i} is: ${luckyNumber}`);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find Max Repeated Digit For Given Number</title>
+    </head>
+    <body>
+        <h3>Find Max Repeated Digit For Given Number</h3>
+        <script>
+            var n = parseInt(prompt('Enter a number to find max repeated digit: '));
+            var maxCount = 0, rem, maxRepeatedDigit, temp = n;
+            while (n > 0) {
+                rem = n % 10;
+                var count = 0;
+                var k = temp;
+                var nestedMxRep;
+                while (k > 0) {
+                    var netsedRem = k % 10;
+                    if (rem === netsedRem) {
+                        count++;
+                        nestedMxRep = netsedRem;
+                    }
+                    k = parseInt(k / 10);
+                }
+                if (maxCount < count) {
+                    maxCount = count;
+                    maxRepeatedDigit = nestedMxRep;
+                }
+                n = parseInt(n / 10);
+            }
+            console.log('Maximum Repeated Digit: ', maxRepeatedDigit);
+            console.log('The number of times repeated: ', maxCount);
+        </script>
+    </body>
+</html>

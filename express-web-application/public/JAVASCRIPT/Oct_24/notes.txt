@@ -1,0 +1,14 @@
+Looping Control Structures:
+
+1. Write a program to check whether given number is a prime number or not?
+2. Write a program to display all the prime numbers between 1 to 100?
+3. Write a program to find out sum of all prime numbers between user given range?
+
+Prime Numbers:
+-------------------
+n = 5;
+5%1-->0
+5%2-->NZ
+5%3-->NZ
+5%4-->NZ
+5%5-->0

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Length of given Number</title>
+</head>
+<body>
+    <h3>Finding Length of given Number</h3>
+    <script>
+        var n = parseInt(prompt('Enter a number to find length: '));
+        var len = 0;
+        while (n > 0) {
+            len++;
+            n = parseInt(n / 10);
+        }
+        console.log(`Length of a given number is: ${len}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Structures</title>
+</head>
+<body>
+    <script>
+        console.log('Started');
+        try {
+            var name = 'Raj';
+            var age = 20;
+            var stdClass = 'BSC';
+            var m1 = prompt('Enter Subject 1: ');
+            var m2 = prompt('Enter Subject 2: ');
+            var m3 = prompt('Enter Subject 3: ');
+
+            var total = parseInt(m1) + parseInt(m2) + parseInt(m3);
+            var avg = total / 3;
+
+            console.log('Student Details');
+            console.log(`Name is ${name}`);
+            console.log('Class is ' + stdClass);
+            console.log('Total Score is ' + total);
+            console.log('Average Score is ' + avg);
+
+            if (avg>45) {
+                console.log('Student is passed');
+                if (avg >= 90) {
+                    console.log('You got distinction');
+                } else if (avg >= 60) {
+                    console.log('you got first class');
+                } else {
+                    console.log('you got second class');
+                    
+                }
+            } else {
+                console.log('Student is failed');
+            }
+        } catch (e) {
+            console.log(e);
+        };
+        console.log('Ended');
+    </script>
+</body>
+</html>

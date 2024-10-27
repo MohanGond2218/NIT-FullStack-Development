@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Elements</title>
+    <style>
+        h3 {
+            text-align: center;
+            border: 1px solid;
+            padding: 10px;
+        }
+        ul {
+            border: 2px solid;
+            width: 500px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #ccc;
+        }
+        li {
+            border: 2px solid;
+            width: 400px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: white;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h3>HTML Input Elements</h3>
+    <form action="http://localhost:8082/send/userDetails" method="post">
+        <ul>    
+            <li>
+                <!-- <label for="userName" >Enter User Name:</label> -->
+                <input type="text"
+                name="userName" maxlength="20" placeholder="Enter User Name"/>
+            </li>
+            <li>
+                <label for="accountPassword">Enter Account Password:</label>
+                <input type="password"
+                name="accountPassword" placeholder="Enter Account Password"/>
+            </li>
+            <li>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" checked  value="Male"/> Male
+                <input type="radio" name="gender" value="Female"/> Female
+            <li>
+                <label for="languages">Languages:</label>
+                <input type="checkbox" name="lngEnlish" checked disabled value="English"> English
+                <input type="checkbox" name="lngKannada" value="Kannada"> Kannada
+                <input type="checkbox" name="lngHindi" value="Hindi"> Hindi
+                <input type="checkbox" name="lngSinskrit" value="Sinskrit"> Sinskrit
+            </li>
+            <li>
+                <label for="courseOpted"></label>
+                <input type="radio" name="course" value="MCA">MCA
+                <input type="radio" name="course" value="BBA">BBA
+                <input type="radio" name="course" value="BSC">BSC
+                <input type="radio" name="course" value="MCA">MCA
+                <input type="radio" name="course" value="MBA">MBA
+    
+            </li>
+             <li>
+                <label for="countryName">Country Name:</label>
+                <select name="countryName" id="countryName">
+                    <option value="ind">India</option>
+                    <option value="jpn" selected>Japan</option>
+                    <option value="ch">China</option>
+                    <option value="am">America</option>
+                    <option value="kn">Kenya</option>
+                </select>
+             </li>
+             <!-- <li>
+                <label for="aboutYourself"></label>
+                <input type="text" placeholder="Enter few words about you">
+                
+             </li> -->
+             <li>
+                <textarea name="aboutYourself" id="" type="text" placeholder="Enter few words about you"></textarea>
+             </li>
+             <li>
+                <!-- <input type="button" value="Save Details">  -->
+                <input type="submit" value="Save Details"> 
+             </li>
+        </ul>
+    
+    </form>
+   
+</body>
+</html>

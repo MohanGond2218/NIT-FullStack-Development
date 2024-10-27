@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a1 = prompt('Enter a number: ');
+        a1 = parseInt(a1);
+
+        var a2 = prompt('Enter a number: ');
+        a2 = parseInt(a2);
+
+        var userSelection = prompt('Choose Sum/Mul/Div/Sub: ');
+
+        switch(userSelection) {
+            case 'Sum':
+                console.log(`Sum is: ${a1+a2}`);
+                break;
+            case 'Mul':
+                console.log(`Mul is: ${a1*a2}`);
+                break;
+            case 'Div':
+                console.log(`Div is: ${a1/a2}`);   
+                break;
+            case 'Sub':
+                console.log(`Sub is: ${a1-a2}`);
+                break;
+            default:
+                console.log('Wrong Selection');   
+        };
+    </script>
+</body>
+</html>

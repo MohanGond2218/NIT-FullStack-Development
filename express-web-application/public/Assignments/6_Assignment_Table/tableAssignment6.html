@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table-Assignment</title>
+    <style>
+        .mainHeading,
+        .mainFooter {
+            border: 1px solid;
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mainHeading {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .imgBlock {
+            background-image: url(./Student-Profiles-Spriting-image.png);
+        }
+        .imgBox1 {
+            background-position:  -39px 239px;
+        }
+        .imgBox2 {
+            background-position:  -39px -4px;
+        }
+        .imgBox3 {
+            background-position:  -22px -229px;
+        }
+        .imgBox4 {
+            background-position:  -287px -1161px; 
+        }
+        .imgBox5 {
+            background-position:  -269px -931px; 
+        }
+        .imgBox6 {
+            background-position:  -535px -933px; 
+        }
+        .imgBox7 {
+            background-position:  -300px -704px; 
+        }
+        .imgBox8 {
+            background-position: -511px -1160px; 
+        }
+        .imgBox9 {
+            background-position: -770px -701px; 
+        }
+        .imgBox10 {
+            background-position: -770px -931px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="mainHeading">Student Details</div>
+    <table border="1px solid" height="100px" width="100%" cellpadding="10px">
+        <thead>
+            <tr>
+                <th>SNo</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Picture</th>
+                <th>Location</th>
+                <th>Gender</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Teena</td>
+                <td>23</td>
+                <td>
+                    <table border="1px soild" width="200px" height="250px" cellspacing="10px">
+                        <tbody>
+                            <tr>
+                                <td class="imgBlock imgBox1"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>Pune</td>
+                <td>Female</td>
+                <td>
+                    <table border="1px solid" width="400px" height="200px" cellpadding="10px">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Actual Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>96</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>94</td>
+                            </tr>
+                            <tr>
+                                <td>Physic</td>
+                                <td>100</td>
+                                <td>96</td>
+                            </tr>
+                            <tr>
+                                <td>Biology</td>
+                                <td>100</td>
+                                <td>96</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>96</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Raj</td>
+                <td>25</td>
+                <td>
+                    <table border="1px soild" width="200px" height="250px" cellspacing="10px">
+                        <tbody>
+                            <tr>
+                                <td class="imgBlock imgBox2"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>Hyderbad</td>
+                <td>Male</td>
+                <td>
+                    <table border="1px solid" width="400px" height="200px" cellpadding="10px">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Actual Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>88</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>96</td>
+                            </tr>
+                            <tr>
+                                <td>Physic</td>
+                                <td>100</td>
+                                <td>86</td>
+                            </tr>
+                            <tr>
+                                <td>Biology</td>
+                                <td>100</td>
+                                <td>91</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>90</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sonia</td>
+                <td>33</td>
+                <td>
+                    <table border="1px soild" width="200px" height="250px" cellspacing="10px">
+                        <tbody>
+                            <tr>
+                                <td class="imgBlock imgBox3"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>Bangalore</td>
+                <td>Female</td>
+                <td>
+                    <table border="1px solid" width="400px" height="200px" cellpadding="10px">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Actual Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>93</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>Physic</td>
+                                <td>100</td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <td>Biology</td>
+                                <td>100</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>91</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>John</td>
+                <td>26</td>
+                <td>
+                    <table border="1px soild" width="200px" height="250px" cellspacing="10px">
+                        <tbody>
+                            <tr>
+                                <td class="imgBlock imgBox4"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>Rajastan</td>
+                <td>Male</td>
+                <td>
+                    <table border="1px solid" width="400px" height="200px" cellpadding="10px">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Actual Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>77</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>88</td>
+                            </tr>
+                            <tr>
+                                <td>Physic</td>
+                                <td>100</td>
+                                <td>76</td>
+                            </tr>
+                            <tr>
+                                <td>Biology</td>
+                                <td>100</td>
+                                <td>72</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>66</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Nisha</td>
+                <td>22</td>
+                <td>
+                    <table border="1px soild" width="200px" height="250px" cellspacing="10px">
+                        <tbody>
+                            <tr>
+                                <td class="imgBlock imgBox5"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>Kenya</td>
+                <td>Female</td>
+                <td>
+                    <table border="1px solid" width="400px" height="200px" cellpadding="10px">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Actual Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>98</td>
+                            </tr>
+                            <tr>
+                                <td>Physic</td>
+                                <td>100</td>
+                                <td>96</td>
+                            </tr>
+                            <tr>
+                                <td>Biology</td>
+                                <td>100</td>
+                                <td>94</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>91</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Peter</td>
+                <td>34</td>
+                <td>
+                    <table border="1px soild" width="200px" height="250px" cellspacing="10px">
+                        <tbody>
+                            <tr>
+                                <td class="imgBlock imgBox6"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>Vizag</td>
+                <td>Male</td>
+                <td>
+                    <table border="1px solid" width="400px" height="200px" cellpadding="10px">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Actual Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>88</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>67</td>
+                            </tr>
+                            <tr>
+                                <td>Physic</td>
+                                <td>100</td>
+                                <td>76</td>
+                            </tr>
+                            <tr>
+                                <td>Biology</td>
+                                <td>100</td>
+                                <td>89</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>78</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Apoorva</td>
+                <td>34</td>
+                <td>
+                    <table border="1px soild" width="200px" height="250px" cellspacing="10px">
+                        <tbody>
+                            <tr>
+                                <td class="imgBlock imgBox7"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>China</td>
+                <td>Female</td>
+                <td>
+                    <table border="1px solid" width="400px" height="200px" cellpadding="10px">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Actual Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>89</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>87</td>
+                            </tr>
+                            <tr>
+                                <td>Physic</td>
+                                <td>100</td>
+                                <td>90</td>
+                            </tr>
+                            <tr>
+                                <td>Biology</td>
+                                <td>100</td>
+                                <td>92</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>94</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Nikhil</td>
+                <td>33</td>
+                <td>
+                    <table border="1px soild" width="200px" height="250px" cellspacing="10px">
+                        <tbody>
+                            <tr>
+                                <td class="imgBlock imgBox8"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>Mumbai</td>
+                <td>Male</td>
+                <td>
+                    <table border="1px solid" width="400px" height="200px" cellpadding="10px">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Actual Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>65</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>75</td>
+                            </tr>
+                            <tr>
+                                <td>Physic</td>
+                                <td>100</td>
+                                <td>90</td>
+                            </tr>
+                            <tr>
+                                <td>Biology</td>
+                                <td>100</td>
+                                <td>66</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>85</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Johnson</td>
+                <td>23</td>
+                <td>
+                    <table border="1px soild" width="200px" height="250px" cellspacing="10px">
+                        <tbody>
+                            <tr>
+                                <td class="imgBlock imgBox9"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>Kerala</td>
+                <td>Male</td>
+                <td>
+                    <table border="1px solid" width="400px" height="200px" cellpadding="10px">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Actual Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>76</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>88</td>
+                            </tr>
+                            <tr>
+                                <td>Physic</td>
+                                <td>100</td>
+                                <td>95</td>
+                            </tr>
+                            <tr>
+                                <td>Biology</td>
+                                <td>100</td>
+                                <td>69</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>45</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Akash</td>
+                <td>27</td>
+                <td>
+                    <table border="1px soild" width="200px" height="250px" cellspacing="10px">
+                        <tbody>
+                            <tr>
+                                <td class="imgBlock imgBox10"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>Chennai</td>
+                <td>Male</td>
+                <td>
+                    <table border="1px solid" width="400px" height="200px" cellpadding="10px">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Actual Marks</th>
+                                <th>Obtained Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>89</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>98</td>
+                            </tr>
+                            <tr>
+                                <td>Physic</td>
+                                <td>100</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>Biology</td>
+                                <td>100</td>
+                                <td>94</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>86</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="mainFooter">@copyright2024</div>
+</body>
+</html>

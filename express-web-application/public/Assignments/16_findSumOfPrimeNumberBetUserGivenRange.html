@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var startRange = parseInt(prompt('Please provide start range for finding sum of prime number: '));
+            var endRange = parseInt(prompt('Please provide end range for finding sum of prime number: '));
+            var sum = 0;
+            for (var i = startRange; i <= endRange; i++) {
+                if (i < 2) continue;
+                var isPrime = true;
+                var n = i;
+                for (var k = 2; k <= n-1; k++) {
+                    if (n%k === 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+                if (isPrime) {
+                    // console.log('Num is prime number',n);
+                    sum += n;
+                }
+            }
+            console.log('The sum of prime number is: ',sum);
+        </script>
+    </body>
+</html>
